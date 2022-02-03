@@ -71,8 +71,13 @@ var addBtn = document.getElementById('addBtn');
 var updateBar = document.getElementById('updateBar');
 var updateBtn = document.getElementById('updateBtn');
 var backDrop = document.getElementById('backDrop');
+var close = document.getElementById('close');
 var newValue;
 var index = 0;
+
+close.addEventListener('click', (e) => {
+    backDrop.style.display = 'none';
+})
 
 updateBtn.addEventListener('click', (e) =>{
     backDrop.style.display = 'none';
